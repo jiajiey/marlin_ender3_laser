@@ -4,6 +4,7 @@ Marlin firmware for Ender3 Pro with laser conversion
 1. Based on Marlin bugfix 2.0.x
 2. For Ender3 Pro with CREALITY v422 and "C" motordrive (same as A4988 in terms of the firmware)
 3. changes made according to https://github.com/MarlinFirmware/Marlin/issues/20638
+4. The code and hardwarelayout for the PWM conversion board (FAN 24V to Laser 5V) is in the folder laserPWM
 
 Changes made from the stock firmware
 1. Set {PA_0,       TIM5, STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, AFIO_NONE, 1, 0)}, // TIM2_CH1  //  Line 114 in /Users/%USERPROFILE%/.platformio/packages/framework-arduinoststm32/variants/STM32F1xx/F103R(C-D-E)T/PeripheralPins.c Note this is stored in your particular build environment, not in this repo.
