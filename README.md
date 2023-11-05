@@ -6,7 +6,7 @@ Marlin firmware for Ender3 Pro with laser conversion
 3. changes made according to https://github.com/MarlinFirmware/Marlin/issues/20638
 
 Changes made from the stock firmware
-1. Set {&gpioa, &timer5, &adc1, 0, 1, 0}, /* PA0 */ in /Users/%USERPROFILE%/.platformio/packages/framework-arduinoststm32-maple/STM32F1/variants/generic_stm32f103r/boards.cpp
+1. Set {PA_0,       TIM5, STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, AFIO_NONE, 1, 0)}, // TIM2_CH1  //  Line 114 in /Users/%USERPROFILE%/.platformio/packages/framework-arduinoststm32/variants/STM32F1xx/F103R(C-D-E)T/PeripheralPins.c Note this is stored in your particular build environment, not in this repo.
 2. Commented #define FAN_SOFT_PWM in Marlin/src/pins/stm32f1/pins_CREALITY_V4.h
 3. Uncommented #define FAST_PWM_FAN in Marlin/Configuration.h
 4. Commented #define FAN_SOFT_PWM in Marlin/Configuration.h (DO NOT comment out #define SOFT_PWM_SCALE 0)
