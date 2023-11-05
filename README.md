@@ -14,3 +14,10 @@ Changes made from the stock firmware
 5. Set #define STEP_TIMER_NUM 4 // for other boards, five is fine. in Marlin/src/HAL/STM32F1/timers.h
 6. #define FAN_MIN_PWM 0 in Marlin/Configuration_adv.h // unconstrain lower Laser power
 7. #define LASER_SYNCHRONOUS_M106_M107 //laser synchronous with the XY movement, solves misalignment and laser power on delay problem
+
+
+reference links
+https://blog.danman.eu/ender-3-as-a-laser-cutter/
+https://marlinfw.org/docs/configuration/2.0.9/laser_spindle.html
+https://www.reddit.com/r/MarlinFirmware/comments/mpmlyr/question_about_disabling_fan_ramp_speed_in_marlin/
+https://www.reddit.com/r/ender3/comments/jy9dm7/creality_32_bit_board_for_ender_3_fan_pwm_is/
