@@ -1,7 +1,7 @@
 # marlin_ender3_laser
 Special Notes for Lightburn
 1. Use M106/107 for laser control
-2. The FanPWM used for laser is tool index 1
+2. The FanPWM used for laser is tool index 0
 
 
 Marlin firmware for Ender3 Pro with laser conversion
